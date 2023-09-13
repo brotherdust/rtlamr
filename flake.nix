@@ -24,6 +24,7 @@
           devShells.default = callPackage ./shell.nix {
             inherit (gomod2nix.legacyPackages.${system}) buildGoApplication mkGoEnv gomod2nix;
           };
+          overlay = final: prev: { rtlamr = prev.pkgs.callPackage ./default.nix { }; };
         })
     );
 }
