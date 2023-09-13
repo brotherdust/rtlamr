@@ -1,5 +1,7 @@
 [![AGPLv3 License](https://img.shields.io/badge/license-AGPLv3-blue.svg?style=flat)](http://choosealicense.com/licenses/agpl-3.0/)
 
+# RTLAMR for Nix
+
 ### Purpose
 
 Utilities often use "smart meters" to optimize their residential meter reading infrastructure. Smart meters transmit consumption information in the various ISM bands allowing utilities to simply send readers driving through neighborhoods to collect commodity consumption information. One protocol in particular: Encoder Receiver Transmitter by Itron is fairly straight forward to decode and operates in the 900MHz ISM band, well within the tunable range of inexpensive rtl-sdr dongles.
@@ -7,28 +9,6 @@ Utilities often use "smart meters" to optimize their residential meter reading i
 This project is a software defined radio receiver for these messages. We make use of an inexpensive rtl-sdr dongle to allow users to non-invasively record and analyze the commodity consumption of their household.
 
 There's now experimental support for data collection and aggregation with [rtlamr-collect](https://github.com/bemasher/rtlamr-collect)!
-
-### Requirements
-
-- GoLang >=1.11 (Go build environment setup guide: http://golang.org/doc/code.html)
-- rtl-sdr
-  - Windows: [pre-built binaries](https://ftp.osmocom.org/binaries/windows/rtl-sdr/)
-  - Linux: [source and build instructions](http://sdr.osmocom.org/trac/wiki/rtl-sdr)
-
-### Install
-To install rtlamr, run the following:  
-- For Go versions >= 1.16: 
-```bash
-go install github.com/bemasher/rtlamr@latest
-```
-- Or, for older versions of Go: 
-```bash
-go get github.com/bemasher/rtlamr
-```
-
-The command above will add the binary to `$HOME/go/bin/`, or if `$GOPATH` is set, `$GOPATH/bin/`.
-
-To run the rtlamr binary from any directory, ensure the directory containing the binary is in your `PATH` ([more info](https://superuser.com/questions/284342/what-are-path-and-other-environment-variables-and-how-can-i-set-or-use-them)).
 
 ### Usage
 
