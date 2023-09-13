@@ -1,0 +1,27 @@
+schema = 3
+
+[mod]
+  [mod."github.com/bemasher/rtltcp"]
+    version = "v0.0.0-20151011062038-3aed81c166c5"
+    hash = "sha256-vzNe4VAIeWUpIXps1IrfL9b+8J7n/BpZN5LxYrXckx0="
+  [mod."github.com/davecgh/go-spew"]
+    version = "v1.1.1"
+    hash = "sha256-nhzSUrE1fCkN0+RL04N4h8jWmRFPPPWbCuDc7Ss0akI="
+  [mod."github.com/pkg/errors"]
+    version = "v0.8.1"
+    hash = "sha256-oe3iddfoLRwpC3ki5fifHf2ZFprtg99iNak50shiuDw="
+  [mod."github.com/pmezard/go-difflib"]
+    version = "v1.0.0"
+    hash = "sha256-/FtmHnaGjdvEIKAJtrUfEhV7EVo5A/eYrtdnUkuxLDA="
+  [mod."github.com/sirupsen/logrus"]
+    version = "v1.7.0"
+    hash = "sha256-VClDP4DJDdMFTMGWR7I8L4hQRMU7cOphLRyUfxCvnNY="
+  [mod."github.com/stretchr/testify"]
+    version = "v1.2.2"
+    hash = "sha256-o52WOxcgdmjwtRRROVPe4l3QoieuGm5S8ZGDjIvtluI="
+  [mod."golang.org/x/sys"]
+    version = "v0.0.0-20191026070338-33540a1f6037"
+    hash = "sha256-AZ5uAOCO9wPxif2h4mE0twivtnKCQMKVLvg2CARWYp8="
+  [mod."golang.org/x/xerrors"]
+    version = "v0.0.0-20191011141410-1b5146add898"
+    hash = "sha256-MP6wjdYXy3SVYFXHwli0CCFwCDpPw9bBU7LnGZKcSnA="
